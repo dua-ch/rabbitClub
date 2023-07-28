@@ -1,17 +1,17 @@
 .headerM AppBar {
-    background-color: #fff;
-    color: #555;
-    width: auto;
-    height: 50px; 
-  font-family: Helvetica,Arial,sans-serif;
+  background-color: #fff;
+  color: #555;
+  width: auto;
+  height: 50px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-header .MuiContainer-root{
+header .MuiContainer-root {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.link{
+.link {
   display: flex;
   align-items: center;
   text-decoration: none;
