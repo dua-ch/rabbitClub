@@ -14,7 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import "./header.css";
-import Rabit from "../../assets/rabbits.png"
+import Rabit from "../../assets/rabbits.png";
+import { Link } from "react-router-dom";
+
 
 const pages = ['PLAY', 'TWITCH', 'TELEGRAM', 'TWITTER'];
 
@@ -42,26 +44,30 @@ const Header = () => {
     <div className='headerM'>
 
 <AppBar position="sticky" color="transparent">
-      <Container maxWidth="xl">
+      <Container >
         <Toolbar disableGutters>
-          <img src={Rabit} width={45} height={45} alt='text'  />
+          <Link to="/" className='link'>
+          <img src={Rabit} width={45} height={45} alt='text' />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            
             sx={{
               mr: 20,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'roboto,helvetica,arial,sans-serif',
+              fontFamily: "'Roboto', sans-serif",
               fontWeight: 500,
               font:20,
-              color: 'black',
+              color: 'rgb(85, 85, 85)',
               textDecoration: 'none',
+              marginLeft:"5px"
             }}
           >
             The Rabbits Club
           </Typography>
+          </Link>
+         
           <Box sx={{ flexGrow: 1 }}></Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

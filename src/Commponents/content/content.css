@@ -61,11 +61,23 @@
     font-weight: 500;
     margin-left: 20px;
     margin-top: 3%;
+    font-family: 'Montserrat Alternates', sans-serif;
+     text-transform: uppercase;
 
 }
 .icon{
     width: 30px;
     margin-right: 40px;
+}
+.fMain h2{
+    font-size: 37px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.fMain p{
+  max-width: 828px;
+  margin: 20px auto;
 }
 @media only screen and (max-width: 950px) {
   .para1,.para2,.para3{

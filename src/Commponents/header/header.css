@@ -4,5 +4,15 @@
     width: auto;
     height: 50px; 
   font-family: Helvetica,Arial,sans-serif;
+}
 
+header .MuiContainer-root{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
