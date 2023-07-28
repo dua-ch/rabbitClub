@@ -1,0 +1,95 @@
+.ContentMain{
+    width: auto;
+    height: 800px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/backGround.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    color: #FFFFFF;
+}
+.ContentMain h2 {
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates", Sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+.heading{
+    margin-left: 20px;
+   
+}
+.para1{
+    margin-left: 20px;
+    margin-top: 3%;
+}
+.para2{
+    margin-left: 20px;
+}
+.para3{
+    margin-left: 20px;
+    color: #EE6623;
+}
+.fSection{
+    width: 50%;
+    height: 600px;
+    margin-top: 100px;
+    margin-right: 10px;
+    text-align: start;
+    line-height: 1.5;
+}
+.sSection{
+    width: 50%;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.forF{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-div{
+    display: flex;
+    margin-top: 3%;
+}
+.forF button{
+    background-color: #EE6623;
+    min-width: max-content;
+    border: none;
+    padding: 1.5% 5%;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 3%;
+
+}
+.icon{
+    width: 30px;
+    margin-right: 40px;
+}
+@media only screen and (max-width: 950px) {
+  .para1,.para2,.para3{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 800px) {
+    .ContentMain{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 950px;
+    }
+    .fSection,.sSection{
+        width: 80%;
+    }
+    .para1,.para2,.para3{
+        font-size: 17px;
+      }
+
+      .sSection{
+        margin-top: 8%;
+      }  
+      .fSection{
+        margin-top: 0%;
+      }  
+}
