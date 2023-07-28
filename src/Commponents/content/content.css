@@ -5,7 +5,7 @@
     background-position: center center;
     background-size: cover;
     color: #FFFFFF;
-    padding: 100px 20px;
+    padding: 137px 20px 78px;
 }
 
 .ContentMain .container-wide{
@@ -76,6 +76,10 @@ h1.heading{
   margin: 20px auto;
 }
 
+.image-div img{
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 950px) {
   .para1,.para2,.para3{
     font-size: 12px;
@@ -103,7 +107,7 @@ h1.heading{
     }
 
     .ContentMain{
-        padding: 60px 20px;
+        padding: 136px 20px 60px;
     }
     .fSection,.sSection{
         width: 100%;
