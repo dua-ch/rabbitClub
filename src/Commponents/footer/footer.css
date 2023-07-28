@@ -1,15 +1,19 @@
 .fMain{
-    width: 100%;
-    height: 660px;
+
     background-color: #000000;
     color: white;
+    padding: 68px 20px;
 }
-.content{
-    width: 60%;
-    margin-left: 19%;
-    padding-top: 4%;
+
+.fMain .contaienr{
+    max-width: 828px;
+    max-width: '0 auto';
 }
-.btn-div button{
+
+.content {
+  
+}
+.btn-div button , button{
     background-color: #EE6623;
     min-width: max-content;
     border: none;
@@ -19,8 +23,9 @@
     font-weight: 600;
     font-family: 'Montserrat Alternates', sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     transition: 0.3s all;
+    cursor: pointer;
 }
 
 .btn-div button:hover{
@@ -28,8 +33,52 @@
     color:#EE6623;
 }
 
-@media only screen and (max-width: 800px) {
+.btn-div {
+    margin-top: 30px;
+}
+
+.icon-div a{
+    display: flex;
+    align-content: center;
+}
+
+@media only screen and (max-width: 767px) {
     .image-div img{
         width: 100%;
+    }
+
+    .fMain {
+        padding: 54px 20px;
+    }
+
+    .fMain h2 {
+        font-size: 30px;
+    }
+
+    .ContentMain h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        width: 23px;
+        margin-right: 13px;
+    }
+
+    .btn-div button, button {
+        padding: 12px 17px;
+        font-size: 14px;
+    }
+
+    
+}
+
+@media (max-width:479px){
+    .forF {
+        gap: 17px;
+    }
+
+    iframe {
+        height: 300px !important;
     }
 }

@@ -1,12 +1,19 @@
 .ContentMain{
     width: auto;
-    height: 800px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/backGround.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    display: flex;
     color: #FFFFFF;
+    padding: 100px 20px;
+}
+
+.ContentMain .container-wide{
+    display: flex;
+    gap:30px;
+    min-height: 622px;
+    align-items: center;
+
 }
 .ContentMain h2 {
     color: #FFFFFF;
@@ -14,60 +21,49 @@
     font-size: 36px;
     font-weight: 700;
 }
-.heading{
-    margin-left: 20px;
-   
+h1.heading{
+   font-size: 91px;
+   line-height: 1;
+   font-weight: 700;
 }
 .para1{
-    margin-left: 20px;
+
     margin-top: 3%;
 }
 .para2{
-    margin-left: 20px;
+  margin-top: 10px;
 }
 .para3{
-    margin-left: 20px;
+    margin-top: 20px;
     color: #EE6623;
+    word-break: break-all;
 }
 .fSection{
     width: 50%;
-    height: 600px;
-    margin-top: 100px;
-    margin-right: 10px;
     text-align: start;
     line-height: 1.5;
 }
 .sSection{
     width: 50%;
-    height: 600px;
-    margin-top: 100px;
-    margin-left: 10px;
 }
 .forF{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
 }
 .icon-div{
     display: flex;
-    margin-top: 3%;
 }
-.forF button{
-    background-color: #EE6623;
-    min-width: max-content;
-    border: none;
-    padding: 1.5% 5%;
-    border-radius: 20px;
-    color: white;
-    font-weight: 500;
-    margin-left: 20px;
-    margin-top: 3%;
-    font-family: 'Montserrat Alternates', sans-serif;
-     text-transform: uppercase;
 
-}
 .icon{
     width: 30px;
-    margin-right: 40px;
+    margin-right: 20px;
+    transition: 0.3s all;
+}
+.icon:hover{
+    transform: scale(1.2);
 }
 .fMain h2{
     font-size: 37px;
@@ -79,29 +75,52 @@
   max-width: 828px;
   margin: 20px auto;
 }
+
 @media only screen and (max-width: 950px) {
   .para1,.para2,.para3{
     font-size: 12px;
   }
+
+    h1.heading {
+        font-size: 64px;
+    }
+
+    .ContentMain .container-wide {
+        min-height: 550px;
+    }
+
+    iframe {
+        height: 350px !important;
+    }
 }
-@media only screen and (max-width: 800px) {
-    .ContentMain{
-        flex-direction: column-reverse;
+@media only screen and (max-width: 850px) {
+    .ContentMain .container-wide{
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 950px;
+        min-height: auto;
+        gap: 50px;
+    }
+
+    .ContentMain{
+        padding: 60px 20px;
     }
     .fSection,.sSection{
-        width: 80%;
+        width: 100%;
     }
     .para1,.para2,.para3{
         font-size: 17px;
       }
 
-      .sSection{
-        margin-top: 8%;
-      }  
       .fSection{
         margin-top: 0%;
       }  
+
+      h1.heading {
+        font-size: 49px;
+    }
+
+    iframe{
+        width: 100% !important;
+    }
 }

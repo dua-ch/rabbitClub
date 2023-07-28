@@ -17,12 +17,13 @@ import "./content.css";
 const Contenet = () => {
   return (
     <div className="ContentMain">
-      <div className="fSection">
+    <dvi className="container-wide">
+    <div className="fSection">
         <div>
           <h2 className="heading">LIVE STREAMING</h2>
         </div>
         <div>
-          <h2 className="heading">RABBIT RACE</h2>
+          <h1 className="heading">RABBIT RACE</h1>
         </div>
 
         <div>
@@ -33,21 +34,19 @@ const Contenet = () => {
             victory right from the comfort of your screen.
           </p>
         </div>
-        <br />
         <div>
           <p className="para2">
             Place bets on your favorite fluffy contenders in real-time and win
             accordingly
           </p>
         </div>
-        <br />
         <div>
           <p className="para3">
             CA – 0x3576eff2be8b1a31782b3e8dfd962a6ddb087890
           </p>
         </div>
-        <div className="forF">
-          <button>START BETTING</button>
+        <div className="forF btn-div">
+          <button >START BETTING</button>
           <div className="icon-div">
             <a href="">
               <img className="icon" src="images/twitch.svg" alt="" />
@@ -65,14 +64,24 @@ const Contenet = () => {
 
       <div className="sSection">
         <div>
-          <iframe
-            src="https://www.youtube.com/embed/uXWycyeTeCs"
-            width={420}
-            height={400}
-            sandbox="allow-scripts allow-modal"
-          ></iframe>
+     
+           <iframe
+        title="YouTube Video"
+        width="100%"
+        height="400px"
+        src="https://www.youtube.com/embed/uXWycyeTeCs"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        autoPlay
+             
+             controls
+        
+            
+      ></iframe>
         </div>
       </div>
+    </dvi>
     </div>
   );
 };
