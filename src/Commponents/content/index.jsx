@@ -23,28 +23,18 @@ const Contenet = () => {
           <h2 className="heading">LIVE STREAMING</h2>
         </div>
         <div>
-          <h1 className="heading">RABBIT RACE</h1>
+          <h1 className="heading">Roach Rally</h1>
         </div>
-
         <div>
           <p className="para1">
-            Welcome to The Rabbits Club – the exhilarating live-streamed rabbit
-            race betting platform! Immerse yourself in the world of fast-paced,
-            adorable action as you witness these agile hoppers compete for
-            victory right from the comfort of your screen.
+            Place bets on live streamed roach races where the first roach to cross the finish line wins!
           </p>
         </div>
-        <div>
-          <p className="para2">
-            Place bets on your favorite fluffy contenders in real-time and win
-            accordingly
-          </p>
-        </div>
-        <div>
+        {/* <div>
           <p className="para3">
             CA – 0x3576eff2be8b1a31782b3e8dfd962a6ddb087890
           </p>
-        </div>
+        </div> */}
         <div className="forF btn-div">
           <button >START BETTING</button>
           <div className="icon-div">

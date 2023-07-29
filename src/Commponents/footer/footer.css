@@ -14,12 +14,12 @@
   
 }
 .btn-div button , button{
-    background-color: #EE6623;
+    background-color: #98ef00;
     min-width: max-content;
     border: none;
     padding: 15px 20px;
     border-radius: 40px;
-    color: white;
+    color: #000;
     font-weight: 600;
     font-family: 'Montserrat Alternates', sans-serif;
     text-transform: uppercase;
@@ -28,9 +28,8 @@
     cursor: pointer;
 }
 
-.btn-div button:hover{
-    background: #fff;
-    color:#EE6623;
+.btn-div button:hover , button:hover {
+    box-shadow:0 3px 14px 5px #98ef0070;
 }
 
 .btn-div {
@@ -70,7 +69,7 @@
         font-size: 14px;
     }
 
-    
+
 }
 
 @media (max-width:479px){

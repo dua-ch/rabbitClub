@@ -1,9 +1,19 @@
-.headerM AppBar {
-  background-color: #fff;
-  color: #555;
-  width: auto;
-  height: 50px;
-  font-family: Helvetica, Arial, sans-serif;
+
+
+.hMain {
+  background-color: #5d4277;
+  padding: 16px 20px;
+  border-bottom: 6px solid #98ef00;
+}
+
+.hMain .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hIcon img {
+  width: 200px;
+  margin: -38px 0 -49px;
 }
 
 header{
@@ -12,9 +22,6 @@ header{
   right: 0;
   top: 0;
   z-index: 999;
-  padding: 15px 20px;
-  background: #fff;
-  box-shadow: 0 12px 8px #37313145;
 }
 
 header .MuiContainer-root {
@@ -126,4 +133,9 @@ display: flex;
      transform: translateX(0);
    
    }
+
+   .hIcon img {
+    width: 154px;
+    margin: -33px 0 -41px;
+   }    
 }

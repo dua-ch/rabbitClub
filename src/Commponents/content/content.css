@@ -1,17 +1,17 @@
 .ContentMain{
     width: auto;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/backGround.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/Webpage.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: #FFFFFF;
-    padding: 137px 20px 78px;
+    padding: 227px 20px 65px;
 }
 
 .ContentMain .container-wide{
     display: flex;
     gap:30px;
-    min-height: 622px;
+    min-height: 580px;
     align-items: center;
 
 }
@@ -27,15 +27,16 @@ h1.heading{
    font-weight: 700;
 }
 .para1{
-
-    margin-top: 3%;
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: 30px;
 }
 .para2{
   margin-top: 10px;
 }
 .para3{
     margin-top: 20px;
-    color: #EE6623;
+    color: #98ef00;
     word-break: break-all;
 }
 .fSection{
@@ -43,6 +44,13 @@ h1.heading{
     text-align: start;
     line-height: 1.5;
 }
+
+.sSection iframe{
+    border: 6px solid #98ef00;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
 .sSection{
     width: 50%;
 }
@@ -106,9 +114,10 @@ h1.heading{
         gap: 50px;
     }
 
-    .ContentMain{
-        padding: 136px 20px 60px;
+    .ContentMain {
+        padding: 220px 20px 60px;
     }
+
     .fSection,.sSection{
         width: 100%;
     }
@@ -126,5 +135,28 @@ h1.heading{
 
     iframe{
         width: 100% !important;
+    }
+}
+
+@media (max-width:767px){
+    h1.heading {
+        font-size: 35px;
+    }
+
+    .para1 {
+        font-size: 16px;
+    }
+
+    .ContentMain h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .ContentMain {
+        padding: 176px 20px 60px;
+    }
+
+    .ContentMain .container-wide {
+        gap: 40px;
     }
 }

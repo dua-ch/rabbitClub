@@ -1,25 +1,35 @@
 // import React from 'react'
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./header.css";
-import Rabit from "../../assets/rabbits.png";
+import Rabit from "../../assets/logo.png";
 
 
 
 const Header = () => {
-  const [IsActive, setIsActive] = useState(false);
-  const [IsMenuActive, setIsMenuActive] = useState(false);
+  // const [IsActive, setIsActive] = useState(false);
+  // const [IsMenuActive, setIsMenuActive] = useState(false);
 
-  const handleMenu = () => {
-    setIsMenuActive(!IsMenuActive);
-    setIsActive(!IsActive)
-  };
-
-
+  // const handleMenu = () => {
+  //   setIsMenuActive(!IsMenuActive);
+  //   setIsActive(!IsActive)
+  // };
 
   return (
-
     <>
-      <header>
+        <header>
+          <div className="hMain">
+            <div className="container">
+                <div className="hIcon">
+                  <a href="/"><img src={Rabit}/></a>
+                </div>
+                {/* <div className="singIn">
+                  <a href=''>SIGN IN <img src={user} alt="" /></a>
+                </div> */}
+            </div>
+          </div>
+        </header>
+
+      {/* <header>
         <div className="container">
           <div className="navigation">
             <a href="/" className="site-logo">
@@ -105,7 +115,7 @@ const Header = () => {
           </div>
         </div>
      
-      </header>
+      </header> */}
     </>
  
   );
